@@ -18,6 +18,7 @@ backend/HazwalInventoryAPI/obj/
 # App config & secrets
 appsettings.local.json
 appsettings.Development.json
+appsettings.json
 *.pfx
 *.p12
 
@@ -34,31 +35,31 @@ logs/
 
 # ==================== FRONTEND (Next.js) ====================
 
-# Dependencies
-frontend/hazwal-inventory-web/node_modules/
-frontend/hazwal-inventory-web/.pnp
-frontend/hazwal-inventory-web/.pnp.js
+# Dependencies (JANGAN ignore folder, hanya folder tertentu)
+node_modules/
+.pnp
+.pnp.js
 
 # Build output & cache
-frontend/hazwal-inventory-web/.next/
-frontend/hazwal-inventory-web/out/
-frontend/hazwal-inventory-web/dist/
-frontend/hazwal-inventory-web/build/
+.next/
+out/
+dist/
+build/
 
 # Environment variables
-frontend/hazwal-inventory-web/.env
-frontend/hazwal-inventory-web/.env.local
-frontend/hazwal-inventory-web/.env.*.local
+.env
+.env.local
+.env.*.local
 
 # IDE & Editor
-frontend/hazwal-inventory-web/.vscode/
-frontend/hazwal-inventory-web/.idea/
-frontend/hazwal-inventory-web/*.swp
-frontend/hazwal-inventory-web/*.swo
+.vscode/
+.idea/
+*.swp
+*.swo
 
 # Testing & Coverage
-frontend/hazwal-inventory-web/coverage/
-frontend/hazwal-inventory-web/.nyc_output/
+coverage/
+.nyc_output/
 
 # ==================== GENERAL ====================
 
@@ -71,8 +72,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.bak
-*.swp
-*.swo
 
 # npm/yarn
 npm-debug.log*
@@ -85,6 +84,3 @@ yarn-error.log*
 
 # Config
 config.local.json
-.env
-.env.local
-.env.*.local
